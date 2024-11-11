@@ -26,7 +26,7 @@ exports.createPages = ({ graphql, actions }) => {
       path: "about",
       component: aboutTemplate,
       context: {
-        slug: process.env.GATSBY_CITY ? nodes[0].slug : nodes[1].slug,
+        slug: process.env.CITY ? nodes[0].slug : nodes[1].slug,
       },
     });
   });

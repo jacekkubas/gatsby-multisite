@@ -11,8 +11,10 @@ const IndexPage = ({ data }) => {
       <Styled.Container>
         <Header />
         <div>Home</div>
-        city:
+        gatsby city:
         <div>{process.env.GATSBY_CITY}</div>
+        city:
+        <div>{process.env.CITY}</div>
         node env:
         <div>{process.env.NODE_ENV}</div>
       </Styled.Container>
