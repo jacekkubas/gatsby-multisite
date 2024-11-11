@@ -11,6 +11,7 @@ const IndexPage = ({ data }) => {
       <Styled.Container>
         <Header />
         <div>Home</div>
+        <div>{process.env.GATSBY_CITY}</div>
       </Styled.Container>
     </Styled.MainSection>
   );
