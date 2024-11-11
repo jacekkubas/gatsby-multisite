@@ -10,9 +10,7 @@ const IndexPage = ({ data }) => {
   return (
     <Styled.MainSection>
       <Styled.Container>
-        qwe
         <Header />
-        asdq
         <h1>{data?.wpPage?.title}</h1>
         <p dangerouslySetInnerHTML={{ __html: data?.wpPage?.content }} />
       </Styled.Container>
