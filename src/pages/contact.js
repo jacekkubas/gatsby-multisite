@@ -10,7 +10,8 @@ const IndexPage = ({ data }) => {
     <Styled.MainSection>
       <Styled.Container>
         <Header />
-        <div>Home</div>
+        <h1>{data?.wpPage?.title}</h1>
+        <p dangerouslySetInnerHTML={{ __html: data?.wpPage?.content }} />
       </Styled.Container>
     </Styled.MainSection>
   );
@@ -18,11 +19,11 @@ const IndexPage = ({ data }) => {
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <title>Sample Page</title>;
 
 export const query = graphql`
   query HomeQuery {
-    wpPage(slug: { eq: "home" }) {
+    wpPage(slug: { eq: "contact" }) {
       title
       content
     }
