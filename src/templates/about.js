@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import Header from "../components/Header";
-import Styled from "../pages/Styled";
+import Styled from "../components/Styled";
 
 const IndexPage = ({ data }) => {
   // const { wpPage, settings, contactPage } = data;

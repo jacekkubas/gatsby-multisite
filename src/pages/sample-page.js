@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import Header from "../components/Header";
-import Styled from "./Styled";
+import Styled from "../components/Styled";
 
 const IndexPage = ({ data }) => {
   console.log(data);

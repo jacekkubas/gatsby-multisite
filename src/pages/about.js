@@ -3,8 +3,9 @@ import { graphql } from "gatsby";
 import Header from "../components/Header";
 import Styled from "../components/Styled";
 
-const IndexPage = ({ data }) => {
-  console.log(data);
+const IndexPage = ({ data, location }) => {
+  // const { wpPage, settings, contactPage } = data;
+  console.log();
 
   return (
     <Styled.MainSection>
@@ -19,11 +20,13 @@ const IndexPage = ({ data }) => {
 
 export default IndexPage;
 
-export const Head = () => <title>Sample Page</title>;
+export const Head = () => <title>Home Page</title>;
+
+const origin = "asd";
 
 export const query = graphql`
-  query HomeQuery {
-    wpPage(slug: { eq: "contact" }) {
+  query ($slug: String) {
+    wpPage(slug: { eq: $slug }) {
       title
       content
     }
